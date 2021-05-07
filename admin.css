@@ -21,7 +21,10 @@ header {
   justify-content: flex-end;
   font-size: 13px;
 }
-.top a {
+.top li {
+  color: white;
+}
+.top li a {
   color: white;
 }
 .top li {
@@ -136,7 +139,7 @@ header {
   height: 500px;
   background-color: blue;
 }
-.ctr form {
+.ctr .test {
   position: absolute;
   width: 955px;
   height: 500px;
@@ -147,22 +150,26 @@ header {
   padding-left: 0px;
   background-color: greenyellow;
 }
-.ctr .range {
+.ctr .find {
   padding-top: 50px;
 }
 
-.ctr .range {
+.ctr .find {
   margin-left: 30px;
 }
 
 #del {
-  margin-left: 520px;
+  margin-left: 0px;
 }
+#del2 {
+  margin-left: 0px;
+}
+
 
 .ctr .pageadmin {
   width: 895px;
   height: 350px;
-  margin: 30px;
+  margin-left: 30px;
   margin-bottom: 20px;
   background-color: red;
 }
@@ -171,9 +178,31 @@ header {
   margin-left: 5px;
   margin-right: 10px;
 }
+#attribute{
+  display: flex;
+}
+.stfForm li a{
+  display:inline-block;
+  width: 80px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.stfForm a{
+  margin-left: 10px;
+  margin-right: 20px;
+}
 
-.ctr #paging {
+.stfForm .toggle{
+  display: none;
+}
+
+.ctr .paging {
   margin-left: 30px;
+}
+
+.pageadmin .stfForm {
+  display: flex;
 }
 
 /*footer*/

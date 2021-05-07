@@ -22,7 +22,7 @@ $('.ctrMenu .tab > ul > li').click(function() {
     // 기존의 active 된 요소들에서 active 제거
     $ctr.find('.active').removeClass('active');
     
-    $ctr.find('form:nth-child(' + (index + 1) + ')').addClass('active');
+    $ctr.find('div:nth-child(' + (index + 1) + ')').addClass('active');
 });
 
 
@@ -52,7 +52,7 @@ $('.ctrMenu .tab > ul > li').click(function() {
         console.log("next : " + next);
         console.log("prev : " + prev);
  
-        let $pingingView = $("#paging");
+        let $pingingView = $(".paging");
         
         let html = "";
         
@@ -66,13 +66,13 @@ $('.ctrMenu .tab > ul > li').click(function() {
         if(last < totalPage)
             html += "<a href=# id='next'>></a>";
         
-        $("#paging").html(html);    // 페이지 목록 생성
-        $("#paging a").css("color", "black");
-        $("#paging a#" + currentPage).css({"text-decoration":"none", 
+        $(".paging").html(html);    // 페이지 목록 생성
+        $(".paging a").css("color", "black");
+        $(".paging a#" + currentPage).css({"text-decoration":"none", 
                                            "color":"red", 
                                            "font-weight":"bold"});    // 현재 페이지 표시
                                            
-        $("#paging a").click(function(){
+        $(".paging a").click(function(){
             
             let $item = $(this);
             let $id = $item.attr("id");
@@ -90,3 +90,57 @@ $('.ctrMenu .tab > ul > li').click(function() {
         paging(totalData, dataPerPage, pageCount, 1);
     });
  
+    $('.check').click(function(){
+
+    });
+
+/* 상품이름 누르면 수정창 뜨게 */
+
+$(".stfName").click(function(){
+    $(this).parent().nextAll().toggle();
+});
+
+
+    /* 체크박스 체크하면 수정가능하게 input태그 변경해주는 함수 */
+$(document).ready(function(){
+	$("#modify1").click(function(){
+		if($(".details1").prop("disabled")){
+			$(".details1").prop("disabled",false);
+		}
+        else{
+            $(".details1").prop("disabled",true);
+        }
+	});
+	$("#modify2").click(function(){
+		if($(".details2").prop("disabled")){
+			$(".details2").prop("disabled",false);
+		}
+        else{
+            $(".details2").prop("disabled",true);
+        }
+	});
+    $("#modify3").click(function(){
+		if($(".details3").prop("disabled")){
+			$(".details3").prop("disabled",false);
+		}
+        else{
+            $(".details3").prop("disabled",true);
+        }
+	});
+    $("#modify4").click(function(){
+		if($(".details4").prop("disabled")){
+			$(".details4").prop("disabled",false);
+		}
+        else{
+            $(".details4").prop("disabled",true);
+        }
+	});
+    $("#modify5").click(function(){
+		if($(".details5").prop("disabled")){
+			$(".details5").prop("disabled",false);
+		}
+        else{
+            $(".details5").prop("disabled",true);
+        }
+	});
+});
