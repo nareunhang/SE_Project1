@@ -97,7 +97,7 @@ $('.ctrMenu .tab > ul > li').click(function() {
 /* 상품이름 누르면 수정창 뜨게 */
 
 $(".stfName").click(function(){
-    $(this).parent().nextAll().toggle();
+    $(this).parent().find('.stfForm').find('.toggle').toggle();
 });
 
 
