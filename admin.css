@@ -134,6 +134,13 @@ header {
   background-color: green;
 }
 
+.eventBody{
+  width: 870px;
+}
+.eventDel{
+  width: 31px;
+}
+
 .ctr {
   width: 955px;
   height: 500px;
@@ -158,14 +165,8 @@ header {
   margin-left: 30px;
 }
 
-#del {
-  margin-left: 0px;
-}
-#del2 {
-  margin-left: 0px;
-}
 .regist{
-  margin-left: 450px;
+  margin-left: 485px;
 }
 
 .ctr .pageadmin {
