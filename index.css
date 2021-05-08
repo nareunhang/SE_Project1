@@ -171,14 +171,19 @@ header{
 }
 .items .item_div{
     width: 250px;
-    height: 400px;
+    height: 300px;
+    background-color: red;
+}
+.items .text_div{
+    width: 250px;
+    height: 30px;
     text-align: center;
-    overflow-wrap: break-word;
+    background-color: blue;
 }
 .items a{
     display: flex;
     width: 250px;
-    height: 400px;
+    height: 330px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 15px;
