@@ -143,4 +143,20 @@ $(document).ready(function(){
             $(".details5").prop("disabled",true);
         }
 	});
+    $("#modify6").click(function(){
+		if($(".details6").prop("disabled")){
+			$(".details6").prop("disabled",false);
+		}
+        else{
+            $(".details6").prop("disabled",true);
+        }
+	});
+    $("#modify7").click(function(){
+		if($(".details7").prop("disabled")){
+			$(".details7").prop("disabled",false);
+		}
+        else{
+            $(".details7").prop("disabled",true);
+        }
+	});
 });
