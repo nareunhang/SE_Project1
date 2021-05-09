@@ -56,12 +56,12 @@
                     <input type="text" name="eventName" id="eventName" value="">
                     <input type="text" name="inform" id="inform" value="">
                     <input type="date" name="start" id="start" value=""> ~ <input type="date" name="end" id="end" value="">
-                    <button type="submit">등록</button>
+                    <button type="submit" formaction="#">등록</button>
                     
                 </div>
             </form>
             <form action="#" method="POST">
-                <button type="submit" id="mod">수정</button>
+                <button type="submit" id="mod" formaction="#">수정</button>
                 <ul class="list">
                     <li class="attribute"><p6 id="img">이미지</p6> <p6 id="title">제목</p6> <p6 id="more">세부정보</p6> <p6 id="range">유효기간</p6></li>
                     <li>
@@ -92,8 +92,43 @@
                         <input type="text" name="inform" class="product4" id="inform" value="" disabled/>
                         <input type="date" name="start" class="product4" id="start" value="" disabled/> ~ <input type="date" name="end" class="product4" id="end" value="" disabled/> 
                     </li>
-                    <li><nav id="paging"></nav></li>
+                    <li>
+                        <input type="checkbox" id="product5">
+                        <input type=file name="imageUpload" accept="image/*" class="product5" id="imageUpload"disabled/>
+                        <input type="text" name="eventName" class="product5" id="eventName" value="" disabled/>
+                        <input type="text" name="inform" class="product5" id="inform" value="" disabled/>
+                        <input type="date" name="start" class="product5" id="start" value="" disabled/> ~ <input type="date" name="end" class="product5" id="end" value="" disabled/> 
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product6">
+                        <input type=file name="imageUpload" accept="image/*" class="product6" id="imageUpload"disabled/>
+                        <input type="text" name="eventName" class="product6" id="eventName" value="" disabled/>
+                        <input type="text" name="inform" class="product6" id="inform" value="" disabled/>
+                        <input type="date" name="start" class="product6" id="start" value="" disabled/> ~ <input type="date" name="end" class="product6" id="end" value="" disabled/> 
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product7">
+                        <input type=file name="imageUpload" accept="image/*" class="product7" id="imageUpload"disabled/>
+                        <input type="text" name="eventName" class="product7" id="eventName" value="" disabled/>
+                        <input type="text" name="inform" class="product7" id="inform" value="" disabled/>
+                        <input type="date" name="start" class="product7" id="start" value="" disabled/> ~ <input type="date" name="end" class="product7" id="end" value="" disabled/> 
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product8">
+                        <input type=file name="imageUpload" accept="image/*" class="product8" id="imageUpload"disabled/>
+                        <input type="text" name="eventName" class="product8" id="eventName" value="" disabled/>
+                        <input type="text" name="inform" class="product8" id="inform" value="" disabled/>
+                        <input type="date" name="start" class="product8" id="start" value="" disabled/> ~ <input type="date" name="end" class="product8" id="end" value="" disabled/> 
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product4">
+                        <input type=file name="imageUpload" accept="image/*" class="product9" id="imageUpload"disabled/>
+                        <input type="text" name="eventName" class="product9" id="eventName" value="" disabled/>
+                        <input type="text" name="inform" class="product9" id="inform" value="" disabled/>
+                        <input type="date" name="start" class="product9" id="start" value="" disabled/> ~ <input type="date" name="end" class="product9" id="end" value="" disabled/> 
+                    </li>
                 </ul>
+                <nav id="paging"></nav>
             </form>
         </nav>
     </div>
