@@ -1,0 +1,355 @@
+<html>
+
+<head>
+    <link href="admin2.css" rel="stylesheet" type="text/css" />
+    
+    <title>TEAM NO.14의 게임 쇼핑몰</title>
+    <meta name="description" content="TEAM NO.14의 게임 쇼핑몰" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5f3739fb3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <ul class="top">
+            <li>환영합니다.</li>
+        </ul>
+    
+        <div class="logo_search">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-dice-d6 fa-2x"></i></a>
+            </div>
+            
+            <form action="#" accept-charset="utf-8" id="search" name="search" method="post">
+                <input type="text" name="need_search">
+                
+                <button type="submit" formaction="#"><i class="fas fa-search fa-2x"></i></button>
+            </form>
+    
+        </div>
+    
+        <div class="category">
+            <ul>
+                <a href="products.html"><li>예약상품</li></a>
+                <a href="products.html"><li>PlayStation5</li></a>
+                <a href="products.html"><li>PlayStation4</li></a>
+                <a href="products.html"><li>PlayStationVR</li></a>
+                <a href="products.html"><li>PlayStation3</li></a>
+                <a href="products.html"><li>닌텐도Switch</li></a>
+                <a href="products.html"><li>닌텐도3DS</li></a>
+                <a href="products.html"><li>할인상품</li></a>
+                <a href="products.html"><li>기타상품</li></a>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="ctrMenu">
+        <aside class="tab">
+            <ul>
+                <li><a href="admin.html">공지/이벤트 관리</a></li>
+                <li class="active"><a href="admin2.html">상품관리</a></li>    
+            </ul>
+        </aside>
+        <div class="ctr">
+            
+
+            <div class="test">
+                <form class="find" action="#">
+                    <div style="padding-bottom:10px;">
+                        <div>
+                            <ul style="display: flex;">
+                                <li>이름</li>
+                                <li style="padding-left: 280px;">가격대</li>
+                                <li style="padding-left:330px;">정렬</li>
+                            </ul>
+                        </div>
+                        <ul style="display: flex;">
+                            <li style="margin-right: 150px;">
+                                <input type="text">
+                            </li>
+                            <li>
+                                <select name="minimum" >
+                                    <option value="none">=== 선택 ===</option>
+                                    <option value="0">0</option>
+                                    <option value="10000">10000</option>
+                                    <option value="30000">30000</option>
+                                    <option value="50000">50000</option>
+                                </select>
+                            </li>
+                            <li style="padding-left: 10px; padding-right: 10px;">~</li>
+                            <li>
+                                <select name="maximum" >
+                                    <option value="none">=== 선택 ===</option>
+                                    <option value="0-1">0</option>
+                                    <option value="10000-1">10000</option>
+                                    <option value="300000-1">30000</option>
+                                    <option value="50000-1">50000</option>
+                                </select>
+                            </li>
+                            <li style="margin-left: 140px;">
+                                <select name="Order" >
+                                    <option value="none">=== 선택 ===</option>
+                                    <option value="smaller">낮은가격순</option>
+                                    <option value="larger">높은가격순</option>
+                                    <option value="nameOrder">이름순</option>
+                                </select>
+                            </li>
+                            <li style="margin-left: 20px;">
+                                <button formaction="#">검색</button>
+                            </li>
+                            <li style="margin-left: 20px;">
+                                <button type="button" onclick="location.href='enrollment.html'">등록</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                
+                <ul class="pageadmin">
+                    <li>
+                        <ul id="attribute">
+                            <li>이미지</li>
+                            <li style="margin-left:27px;">이름</li>
+                            <li style="margin-left:130px">카테고리</li>
+                            <li style="margin-left:8px;">상세정보</li>
+                            <li style="margin-left:95px;">가격</li>
+                            <li style="margin-left:68px;">재고량</li>
+                            <li style="margin-left:10px;">판매가</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">1111111111111111111111111</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details1" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details1" value="111" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1"  class="details1" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details1" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details1" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details1" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details1" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details1" disabled  formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify1">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">222</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details2" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details2" value="222" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details2" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details2" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details2" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details2" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details2" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details2" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify2">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">333</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details3" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details3" value="333" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details3" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details3" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details3" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details3" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details3" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details3" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify3">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">444</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details4" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details4" value="444" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details4" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details4" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details4" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details4" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details4" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details4" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify4">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">555</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details5" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details5" value="555" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details5" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details5" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details5" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details5" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details5" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details5" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify5">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">555</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details6" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details6" value="555" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details6" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details6" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details6" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details6" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details6" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details6" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify6">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="#" accept-charset="utf-8" class="stfDiv" method="POST">
+                            <a href="#" class="stfName">555</a>
+                            <ul class="stfForm">
+                                <li class="toggle"><input type=file name="imageUpload" accept="image/*" class="details7" id="imageUpload"  style="width:75px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details7" value="555" required disabled></li>
+                                <li class="toggle">
+                                    <select name="platform" size="1" class="details7" style="width:70px" disabled>
+                                        <option selected="selected">=선택=</option>
+                                        <option value="PlayStation5">PlayStation5</option>
+                                        <option value="PlayStation4">PlayStation4</option>
+                                        <option value="PlayStationVR">PlayStationVR</option>
+                                        <option value="PlayStation3">PlayStation3</option>
+                                        <option value="닌텐도Switch">닌텐도Switch</option>
+                                        <option value="닌텐도3DS">닌텐도3DS</option>
+                                    </select>
+                                </li>
+                                <li class="toggle"><input type="text" class="details7" value="" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details7" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details7" value="" style="width:60px;" required disabled/></li>
+                                <li class="toggle"><input type="text" class="details7" value="" style="width:100px;" required disabled/></li>
+                                <li class="toggle"><button class="details7" disabled formaction="/manage/save">저장</button></li>
+                                <li class="toggle"><button type="button" id="modify7">수정</button></li>
+                                <li class="toggle"><button type="submit" value="삭제" formaction="/manage/delete">삭제</button></li>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+                <nav class="paging"></nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="others">
+        <ul>
+            <li>1111</li>
+            <li>2222</li>
+            <li>3333</li>
+            <li>4444</li>
+        </ul>
+
+        <ul>
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+            <li>444</li>
+        </ul>
+
+        <ul>
+            <li>11</li>
+            <li>22</li>
+            <li>33</li>
+            <li>44</li>
+        </ul>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+    </footer>   
+    </body>
+    
+
+    <script src="admin2.js"></script>
+
+</html>
