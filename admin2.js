@@ -75,6 +75,11 @@ $(".stfName").click(function(){
     $(this).parent().find('.stfForm').find('.toggle').toggle();
 });
 
+/* 삭제된 상품 이름 누르면 상세정보 뜨게 */
+$(".deleteStf").click(function(){
+    $(this).parent().find('.stfForm').find('.toggle').toggle();
+});
+
 
     /* 체크박스 체크하면 수정가능하게 input태그 변경해주는 함수 */
 $(document).ready(function(){

@@ -186,6 +186,9 @@
   .pageadmin .stfForm {
     display: flex;
   }
+  .deleteStf{
+    color: gray;
+  }
   
   /*footer*/
   .others {
