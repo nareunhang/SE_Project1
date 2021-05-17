@@ -170,11 +170,14 @@ header {
   background-color: goldenrod;
 }
 .prod .product #keep {
+  margin-top: 20px;
+  width: 800px;
+}
+.prod .product #keep .sub{
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  width: 800px;
 }
 
 .prod .product #address {
@@ -191,28 +194,40 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  width: 540px;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .prod .product #num {
-  width: 100px;
+  width: 250px;
   height: 40px;
+  margin-top: 4px;
 }
 
 .prod .product .num_button {
   width: 20px;
   height: 18px;
 }
+.prod .product .address_button {
+  width: 250px;
+  height: 40px;
+}
+.prod .product #buySector{
+  display: flex;
+  width: 540px;
+  justify-content: space-between;
+}
 
 .prod .product #cart {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 270px;
 }
 
 .prod .product .cart_button {
-  width: 190px;
+  width: 270px;
   height: 40px;
 }
 
@@ -220,11 +235,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 250px;
 }
 
 .prod .product .buy_button {
-  width: 190px;
+  width: 250px;
   height: 40px;
 }
 
