@@ -60,7 +60,7 @@
                             <div id="a">카테고리</div>
                             <div id="b">
                                 <select name="">
-                                    <option selected="selected">선택</option>
+                                    <option selected="selected" disabled>선택</option>
                                     <option value="PlayStation5">PlayStation5</option>
                                     <option value="PlayStation4">PlayStation4</option>
                                     <option value="PlayStationVR">PlayStationVR</option>
@@ -79,21 +79,21 @@
                         <div class="name">
                             <div id="a">원가</div>
                             <div id="b">
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('원가: 숫자만 입력하세요');" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('원가: 숫자(양수)만 입력하세요');" min="1" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
                             </div>
                         </div>
 
                         <div class="name">
                             <div id="a">할인가</div>
                             <div id="b">
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('할인가: 숫자만 입력하세요');" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('할인가: 숫자(양수)만 입력하세요');" min="1" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
                             </div>
                         </div>
 
                         <div class="name">
                             <div id="a">재고량</div>
                             <div id="b">                            
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('재고량: 숫자만 입력하세요');" name="amount" placeholder="개" onfocus="this.placeholder=''" onblur="this.placeholder='개'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('재고량: 숫자(양수)만 입력하세요');" min="1" name="amount" placeholder="개" onfocus="this.placeholder=''" onblur="this.placeholder='개'" required>
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@
                         <div class="name">
                             <div id="a">이미지 등록</div>
                             <div id="b">
-                                <input type="file" name="imageFile" size=40 required>
+                                <input multiple="multiple" type="file" name="imageFile[]" size=40 required>
                             </div>
                         </div>
 
