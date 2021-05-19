@@ -69,14 +69,14 @@
                         </div>
                         <ul style="display: flex;">
                             <li style="margin-right: 140px;">
-                                <input type="text" name="name" value="{{ session()->pull('name') }}">
+                                <input type="text" name="name" value="{{ session()->pull('name') }}" autocomplete="off">
                             </li>
                             <li>
-                                <input type="number" name="min" class="number" value="{{ session()->pull('min') }}">
+                                <input type="number" name="min" class="number" value="{{ session()->pull('min') }}" autocomplete="off">
                             </li>
                             <li style="padding-left: 10px; padding-right: 10px;">~</li>
                             <li>
-                                <input type="number" name="max" class="number" value="{{ session()->pull('max') }}">
+                                <input type="number" name="max" class="number" value="{{ session()->pull('max') }}" autocomplete="off">
                             </li>
                             <li style="margin-left: 140px;">
                                 <select name="order">
