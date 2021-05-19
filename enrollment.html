@@ -79,21 +79,21 @@
                         <div class="name">
                             <div id="a">원가</div>
                             <div id="b">
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('원가: 숫자만 입력하세요');" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('원가: 숫자(양수)만 입력하세요');" min="1" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
                             </div>
                         </div>
 
                         <div class="name">
                             <div id="a">할인가</div>
                             <div id="b">
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('할인가: 숫자만 입력하세요');" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('할인가: 숫자(양수)만 입력하세요');" min="1" id="" name="" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
                             </div>
                         </div>
 
                         <div class="name">
                             <div id="a">재고량</div>
                             <div id="b">                            
-                                <input type="text" pattern="[0-9]+" oninvalid="alert('재고량: 숫자만 입력하세요');" name="amount" placeholder="개" onfocus="this.placeholder=''" onblur="this.placeholder='개'" required>
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('재고량: 숫자(양수)만 입력하세요');" min="1" name="amount" placeholder="개" onfocus="this.placeholder=''" onblur="this.placeholder='개'" required>
                             </div>
                         </div>
 
