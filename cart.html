@@ -63,36 +63,45 @@
                 <div id="head_name">
                     상품명
                 </div>
+                <div id="head_price">
+                    개별가
+                </div>
                 <div id="head_amount">
                     수량
                 </div>
                 <div id="head_price">
                     상품금액
                 </div>
+                <div id="head_delete">삭제</div>
 
                 <!-- 여기서부터 상품 추가 -->
                 <div id="image">
                     <img src="C:\Users\pega0\OneDrive\바탕 화면\download.jpg">
                 </div>
                 <div id="name">a</div>
+                <div id="price">3000</div>
                 <div id="amount">
-                    <input name="amount" id="num" type="number" value="1" min="1" style="text-align:center;" onchange="sum(); price();"/>
-                        <!--<ul>
-                            <li>
-                                <button class="num_button" type="button" onclick="fnCalCount('p',this);">+</button>
-                            </li>
-                            <li>
-                                <button class="num_button" type="button" onclick="fnCalCount('m', this);">-</button>
-                            </li>
-                        </ul>-->
+                    <input name="amount" id="num" class="num" type="number" value="1" min="1" style="text-align:center;" onchange="sum();"/>
                 </div>
-                <div id="price"><div id="price1">3000</div><div>원</div></div>
-                
+                <div id="price"><div id="price1">3000</div><nav>원</nav></div>
+                <div id="delete"><button type="submit" value="삭제" formaction="">삭제</button></div>
+
+                <div id="image">
+                    <img src="C:\Users\pega0\OneDrive\바탕 화면\download.jpg">
+                </div>
+                <div id="name">a</div>
+                <div id="price2">4000</div>
+                <div id="amount">
+                    <input name="amount" id="num1" class="num" type="number" value="1" min="1" style="text-align:center;" onchange="sum1();"/>
+                </div>
+                <div id="price"><div id="price3">4000</div><nav>원</nav></div>
+                <div id="delete"><button type="submit" value="삭제" formaction="">삭제</button></div>
+
                 <!-- 총 금액 -->
                 <div class="sum">
                     총 금액
                 </div>
-                <div class="result"><div id="price2">1000000</div><nav id="result">원</nav></div>
+                <div class="result"><div id="sum_price">7000</div><nav id="result">원</nav></div>
 
                 <!-- 결제 버튼 -->
                 <div class="buy">

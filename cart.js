@@ -12,7 +12,16 @@ function fnCalCount(type, ths){
 
 function sum()  {
     const name = document.getElementById('num').value;
-    document.getElementById("price1").innerText = (name * 3000);
+    const price = $("#price").text();
+    document.getElementById("price1").innerHTML = (name * price);
+    this.price();
+  }
+
+  function sum1()  {
+    const name1 = document.getElementById('num1').value;
+    const price1 = $("#price2").text();
+    document.getElementById("price3").innerHTML = (name1 * price1);
+    this.price();
   }
 
   function captureReturnKey(e) {
@@ -21,6 +30,10 @@ function sum()  {
   }
 
   function price() {
-      const name = document.getElementById("price1").value;
-      document.getElementById("price2").innerText = name;
+    const pr1 = $("#price1").text();
+    const pr2 = $("#price3").text();
+    var sum = 0;
+    sum += pr1*1;
+    sum += pr2*1;
+    document.getElementById('sum_price').innerHTML = sum;
   }

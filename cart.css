@@ -118,7 +118,7 @@ header {
 .prod #product {
   display: flex;
   justify-content: center;
-  width: 830px;
+  width: 980px;
   flex-wrap: wrap;
   border-top: 1px solid black;
 }
@@ -156,7 +156,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
+  background-color: #e0e0e0;
+  border-bottom: 1px solid gray;
+}
+
+.prod #head_delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
   background-color: #e0e0e0;
   border-bottom: 1px solid gray;
 }
@@ -192,7 +201,7 @@ header {
   border-bottom: 1px solid gray;
 }
 
-.prod #num {
+.prod .num {
   width: 130px;
   height: 40px;
 }
@@ -202,11 +211,21 @@ header {
   height: 20px;
 }
 
-.prod #price {
+.prod #price,
+#price2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 150px;
+  margin-top: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.prod #delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
   margin-top: 5px;
   border-bottom: 1px solid gray;
 }
@@ -216,7 +235,7 @@ header {
   display: flex;
   justify-content: right;
   align-content: space-between;
-  width: 740px;
+  width: 890px;
   height: 28px;
   margin-top: 5px;
   border-bottom: 1px solid black;
