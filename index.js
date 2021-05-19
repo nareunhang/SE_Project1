@@ -26,7 +26,7 @@ function showSlides() {
 
 
 function slideNext(){
-    let nextEvent = document.getElementsByClassName('.next')
+    let nextEvent = document.getElementsByClassName('next')
     nextEvent.addEventListener('click', function(){
         slider.style.left = -(sliderWidth * slideIndex) + 'px';
         slideIndex++;
