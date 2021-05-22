@@ -46,7 +46,7 @@
         </li>
         
         <!--배송지 들어가는 부분 시작-->
-        <li>
+        <li class="infoLi">
             <form method="POST" onsubmit="return confirm('정말 삭제하시겠습니까?')">
                 <div class="infoForm">
                     <ul class="info">
@@ -84,13 +84,13 @@
             </form>
         </li>
 
-        <li>
-            <form method="POST" onsubmit="return confirm('정말 삭제?')">
+        <li class="infoLi">
+            <form method="POST" onsubmit="return confirm('정말 삭제하시겠습니까?')">
                 <div class="infoForm">
                     <ul class="info">
-                        <li class="name">집</li>
+                        <li class="name">1집</li>
                         <li class="phoneNum">010-4165-9853</li>
-                        <li class="address">경기도 여주시 세종로 517번길 48, B동 203호</li>
+                        <li class="address">1경기도 여주시 세종로 517번길 48, B동 203호</li>
                     </ul>
                     <ul class="but">
                         <li><button type="button" class="modBtn" name="modBtn">수정</button></li>
@@ -106,17 +106,17 @@
                         주소
                         <ul class="add">
                             <li id="post">
-                                <input type="text" id="postcode2" name="postcode" placeholder="우편번호" value="12345" autocomplete="off">
+                                <input type="text" id="postcode2" name="postcode" placeholder="우편번호" value="23456" autocomplete="off">
                                 <button class="address_button" name="address_button" type="button" onclick="execDaumPostcode()">주소 찾기</button>
                             </li>
-                            <li id="modadd"><input type="text" id="modifyAddress2" name="modifyAddress" placeholder="주소" value="111" autocomplete="off"><br></li>
+                            <li id="modadd"><input type="text" id="modifyAddress2" name="modifyAddress" placeholder="주소" value="aaaa" autocomplete="off"><br></li>
                             <li id="plusadd">
-                                <input type="text" id="detailAddress2" name="detailAddress" placeholder="상세주소" value="222" autocomplete="off">
-                                <input type="text" id="extraAddress2" name="extraAddress" placeholder="참고항목" value="333" autocomplete="off">
+                                <input type="text" id="detailAddress2" name="detailAddress" placeholder="상세주소" value="bbbb" autocomplete="off">
+                                <input type="text" id="extraAddress2" name="extraAddress" placeholder="참고항목" value="ccc" autocomplete="off">
                             </li>
                         </ul>
                     </div>
-                    <div id="tell">연락처 <input type="text" pattern="[0-9]{11,11}$" name="phoneNo" id="phoneNo" value="01041659853" placeholder="전화번호" onfocus="this.placeholder=''" onblur="this.placeholder='전화번호'" title="-없이 숫자 11자리를 입력하세요." required></div>
+                    <div id="tell">연락처 <input type="text" pattern="[0-9]{11,11}$" name="phoneNo" id="phoneNo" value="01041659853````" placeholder="전화번호" onfocus="this.placeholder=''" onblur="this.placeholder='전화번호'" title="-없이 숫자 11자리를 입력하세요." required></div>
                     <div class="submitbtn"><button type="submit" class="subbtn" formaction="##" name="subbtn">확인</button></div>
                 </div>
             </form>

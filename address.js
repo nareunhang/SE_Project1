@@ -13,13 +13,12 @@ $(".modBtn").click(function(){
 
 
 $(".info").click(function(){
-        window.opener.document.getElementById("destination").value = $(this).parent().parent().find('.modify').find('.moddiv').find('#des').find('input').val();
-        window.opener.document.getElementById("postcode").value = $(this).parent().parent().find('.modify').find('.moddiv').find('.addr').find('.add').find('#post').find('input').val();
-        window.opener.document.getElementById("address").value = $(this).parent().parent().find('.modify').find('.moddiv').find('.addr').find('.add').find('#modadd').find('input').val();
-        window.opener.document.getElementById("detailAddress").value = $(this).parent().parent().find('.modify').find('.moddiv').find('.addr').find('.add').find('#plusadd').find('input:eq(0)').val();
-        window.opener.document.getElementById("extraAddress").value = $(this).parent().parent().find('.modify').find('.moddiv').find('.addr').find('.add').find('#plusadd').find('input:eq(1)').val();
-        window.opener.document.getElementById("phoneNo").value = $(this).parent().parent().find('.modify').find('.moddiv').find('#tell').find('input').val();
-    
+        window.opener.document.getElementById("destination").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('#des').find('input').val();
+        window.opener.document.getElementById("postcode").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('.addr').find('.add').find('#post').find('input').val();
+        window.opener.document.getElementById("address").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('.addr').find('.add').find('#modadd').find('input').val();
+        window.opener.document.getElementById("detailAddress").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('.addr').find('.add').find('#plusadd').find('input:eq(0)').val();
+        window.opener.document.getElementById("extraAddress").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('.addr').find('.add').find('#plusadd').find('input:eq(1)').val();
+        window.opener.document.getElementById("phoneNo").value = $(this).closest('.infoLi').find('.modify').find('.moddiv').find('#tell').find('input').val();
         window.close(); 
         window.opener.document.getElementById('new').click();
 });
