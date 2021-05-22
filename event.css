@@ -126,19 +126,11 @@
     display: flex;
   }
   
-#sort {
-    display: flex;
-  width: 200px;
-  font-size: 13px;
-  justify-content: space-between;
-  text-decoration: underline;
-  margin-left: 770px;
-  }
   .list{
       margin-left: 30px;
   }
-#mod{
-    margin-left: 30px;
+.mod{
+    right: 0px;
 }
   .list li{
       margin-bottom: 10px;
