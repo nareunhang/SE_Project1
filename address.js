@@ -2,21 +2,13 @@
 /*삭제버튼 클릭시 물어보고 선택에따라 확인이면 다시 address.html로 돌아가고
     취소면 삭제누르기 전으로 돌아감*/
 
-function deletebtn() {
-    if(confirm("정말 삭제하시겠습니까?") == true){
-        alert("삭제되었습니다.");
-        document.location.reload();
-    }
-    else{
-        return;
-    }
-}
+
 $(".regist").click(function(){
     $(this).parent().parent().find("#newinfo").toggle();
 });
 $(".modBtn").click(function(){
 
-    $(this).parent().parent().parent().parent().find('.modify').toggle();
+    $(this).parent().parent().parent().parent().parent().find('.modify').toggle();
 });
 
 
