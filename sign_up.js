@@ -23,12 +23,13 @@ function id_check() {
           if (data['overlap'] == "fail") {
             alert("이미 존재하는 아이디 입니다.");
             id_overlap_input.focus();
+            $("#sign_btn").attr("disabled", "disabled");
             return;
           } else {
             alert("사용가능한 아이디 입니다.");
             $('#email').attr("check_result", "success");
             $('#id_check_sucess').show();
-            $('#check').hide();
+            $('#check').attr("disabled", "disabled");
             return;
           }
         }
