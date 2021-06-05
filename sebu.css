@@ -129,7 +129,6 @@ header {
   align-items: center;
   margin-top: 20px;
   width: 540px;
-  background-color: aquamarine;
 }
 
 /* 이벤트 베너 + 아이템들 */
@@ -458,25 +457,20 @@ h2 {
   margin-top: 20px;
   width: 540px;
   height: 100px;
-  background-color: violet;
 }
 
 .prod .product #price {
   display: flex;
-
   align-items: center;
   width: 540px;
   height: 40px;
-  background-color: skyblue;
 }
 
 .prod .product #addprice {
   display: flex;
-
   align-items: center;
   width: 540px;
   height: 40px;
-  background-color: skyblue;
 }
 
 .prod .product #select {
@@ -485,7 +479,6 @@ h2 {
   align-items: center;
   margin-top: 20px;
   width: 540px;
-  background-color: goldenrod;
 }
 .prod .product #keep {
   margin-top: 20px;
@@ -505,7 +498,6 @@ h2 {
   margin-left: 130px;
   width: 540px;
   height: 300px;
-  background-color: pink;
 }
 #selectAdd {
   display: flex;
@@ -643,7 +635,8 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   width: 1080px;
   white-space: pre-wrap;
-  background-color: blueviolet;
+  padding: 5px;
+  border: 1px solid gray;
 }
 
 /*footer*/
