@@ -308,19 +308,19 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 660px;
-  height: 90px;
+  height: 70px;
 }
 
 .ctr .second .part .part2 .name .a {
   display: flex;
   width: 640px;
-  height: 20px;
+  height: 15px;
 }
 
 .ctr .second .part .part2 .name .b {
   display: flex;
   width: 660px;
-  height: 70px;
+  height: 55px;
 }
 
 .ctr .pageadmin .check {

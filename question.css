@@ -21,10 +21,7 @@ header {
   justify-content: flex-end;
   font-size: 13px;
 }
-.top li {
-  color: white;
-}
-.top li a {
+.top a {
   color: white;
 }
 .top li {
@@ -104,136 +101,32 @@ header {
   color: dimgray;
 }
 
-/* 관리 탭 */
-
-.ctrMenu {
+/*문의 화면*/
+.question {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  text-align: left;
+  margin-top: 20px;
 }
-.tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 500px;
-  margin-right: 20px;
-  border-radius: 20px;
-  border: 1px solid gray;
+.question .text {
+  width: 460px;
+  height: 48px;
+  border: 1px solid lightskyblue;
+  outline: none;
+  margin-bottom: 10px;
 }
-.tab ul {
-  text-align: center;
-}
-.tab ul li {
-  margin-top: 55px;
-  margin-bottom: 55px;
+.question textarea {
+  width: 460px;
+  height: 100px;
+  border: 1px solid lightskyblue;
+  margin-bottom: 5px;
+  outline: none;
 }
 
-.tab ul .active {
-  background-color: lightgray;
-}
-
-.ctr {
-  width: 955px;
-  height: 500px;
-}
-.ctr .test {
-  position: absolute;
-  width: 955px;
-  height: 500px;
-  background-color: greenyellow;
-}
-.ctr .find {
-  padding-top: 50px;
-}
-
-.ctr .find {
-  margin-left: 30px;
-}
-
-.ctr .find .number {
-  width: 100px;
-}
-
-.regist {
-  margin-left: 485px;
-}
-
-.ctr .pageadmin {
-  width: 895px;
-  height: 350px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  background-color: moccasin;
-}
-
-.ctr .pageadmin .check {
-  margin-left: 5px;
-  margin-right: 10px;
-}
-#attribute {
-  display: flex;
-}
-.stfDiv {
-  height: 45px;
-}
-
-.ctr .paging {
-  margin-left: 30px;
-}
-
-.pageadmin .stfForm {
-  display: flex;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 30px;
-}
-
-.pageadmin .name {
-  width: 300px;
-  height: 45px;
-}
-
-.pageadmin .price {
-  width: 110px;
-  height: 45px;
-}
-
-.pageadmin .buy {
-  width: 110px;
-  height: 45px;
-}
-
-.pageadmin .delete {
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.deleteStf {
-  display: flex;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 30px;
-  color: gray;
-}
-
-.pageadmin .deleteStf .name a {
-  width: 300px;
-  height: 45px;
-  color: gray;
-}
-
-.pageadmin .deleteStf .price {
-  width: 110px;
-  height: 45px;
-  color: gray;
-}
-
-.pageadmin .deleteStf .buy {
-  width: 110px;
-  height: 45px;
-  color: gray;
+.question .button {
+  width: 460px;
 }
 
 /*footer*/

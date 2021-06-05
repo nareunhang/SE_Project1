@@ -98,6 +98,13 @@
                         </div>
 
                         <div class="name">
+                            <div id="a">배송비</div>
+                            <div id="b">                            
+                                <input type="number" pattern="[0-9]+" oninvalid="alert('배송비: 숫자(양수)만 입력하세요');" min="1" name="delivery" placeholder="원" onfocus="this.placeholder=''" onblur="this.placeholder='원'" required>
+                            </div>
+                        </div>
+
+                        <div class="name">
                             <div id="a">상품 정보</div>
                             <div id="b">                           
                                 <textarea placeholder="상품 정보" onfocus="this.placeholder=''" onblur="this.placeholder='상품 정보'" required></textarea>

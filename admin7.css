@@ -103,7 +103,9 @@ header {
   margin-right: 10px;
   color: dimgray;
 }
-
+form {
+  display: flex;
+}
 /* 관리 탭 */
 
 .ctrMenu {
@@ -134,9 +136,17 @@ header {
   background-color: lightgray;
 }
 
+.eventBody {
+  width: 806px;
+}
+.eventDel {
+  width: 95px;
+}
+
 .ctr {
   width: 955px;
   height: 500px;
+  background-color: blue;
 }
 .ctr .test {
   position: absolute;
@@ -144,22 +154,23 @@ header {
   height: 500px;
   background-color: greenyellow;
 }
-.ctr .find {
-  padding-top: 50px;
-}
 
-.ctr .find {
-  margin-left: 30px;
-}
-
-.ctr .find .number {
-  width: 100px;
+.ctr .test .sign {
+  margin-left: 490px;
 }
 
 .regist {
   margin-left: 485px;
 }
 
+#sort {
+  display: flex;
+  width: 200px;
+  font-size: 13px;
+  justify-content: space-between;
+  text-decoration: underline;
+  margin-left: 690px;
+}
 .ctr .pageadmin {
   width: 895px;
   height: 350px;
@@ -168,74 +179,114 @@ header {
   background-color: moccasin;
 }
 
-.ctr .pageadmin .check {
-  margin-left: 5px;
-  margin-right: 10px;
-}
-#attribute {
-  display: flex;
-}
-.stfDiv {
-  height: 45px;
-}
-
 .ctr .paging {
   margin-left: 30px;
 }
 
-.pageadmin .stfForm {
+.quest {
   display: flex;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
-.pageadmin .name {
-  width: 300px;
-  height: 45px;
-}
-
-.pageadmin .price {
-  width: 110px;
-  height: 45px;
-}
-
-.pageadmin .buy {
-  width: 110px;
-  height: 45px;
-}
-
-.pageadmin .delete {
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.deleteStf {
+.quest .head_quest {
   display: flex;
-  height: 40px;
-  margin-top: 5px;
-  margin-left: 30px;
-  color: gray;
+  justify-content: center;
+  width: 895px;
+  flex-wrap: wrap;
 }
 
-.pageadmin .deleteStf .name a {
-  width: 300px;
-  height: 45px;
-  color: gray;
+.quest .head_quest #head_day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-bottom: 1px solid gray;
 }
 
-.pageadmin .deleteStf .price {
-  width: 110px;
-  height: 45px;
-  color: gray;
+.quest .head_quest #head_buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-bottom: 1px solid gray;
 }
 
-.pageadmin .deleteStf .buy {
-  width: 110px;
-  height: 45px;
-  color: gray;
+.quest .head_quest #head_require {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-bottom: 1px solid gray;
 }
 
+.quest .head_quest #head_amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  border-bottom: 1px solid gray;
+}
+
+.quest .head_quest #head_del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-bottom: 1px solid gray;
+}
+
+.quest .body_quest {
+  display: flex;
+  justify-content: center;
+  width: 895px;
+  flex-wrap: wrap;
+}
+
+.quest #day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quest #buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quest #require {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quest #amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quest #del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 /*footer*/
 .others {
   display: flex;

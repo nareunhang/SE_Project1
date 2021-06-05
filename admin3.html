@@ -109,7 +109,7 @@
                     가격
                 </div>
                 <div class="b">
-                <input type="text" name="price" class="details1" value="{{ $product->price }}" autocomplete="off" required disabled>
+                <input type="text" name="price" class="details1" value="{{ $product->price }}" autocomplete="off" min="1" pattern="[0-9]+" oninvalid="alert('원가: 숫자(양수)만 입력하세요');" required disabled>
                 </div>
             </div>
 
@@ -118,7 +118,7 @@
                     재고량
                 </div>
                 <div class="b">
-                <input type="text" name="num" class="details1" value="{{ $product->num }}" autocomplete="off" required disabled>
+                <input type="text" name="num" class="details1" value="{{ $product->num }}" autocomplete="off" min="1" pattern="[0-9]+" oninvalid="alert('원가: 숫자(양수)만 입력하세요');" required disabled>
                 </div>
             </div>
 
@@ -127,7 +127,16 @@
                     판매가
                 </div>
                 <div class="b">
-                <input type="text" name="sale_price" class="details1" value="{{ $product->sale_price }}" autocomplete="off" required disabled>
+                <input type="text" name="sale_price" class="details1" value="{{ $product->sale_price }}" autocomplete="off" min="1" pattern="[0-9]+" oninvalid="alert('원가: 숫자(양수)만 입력하세요');"  required disabled>
+                </div>
+            </div>
+
+            <div class="name">
+                <div class="a">
+                    배송비
+                </div>
+                <div class="b">
+                <input type="text" name="delivery" class="details1" value="{{ $product->delivery }}" autocomplete="off" min="1" pattern="[0-9]+" oninvalid="alert('배송비: 숫자(양수)만 입력하세요');"  required disabled>
                 </div>
             </div>
 
