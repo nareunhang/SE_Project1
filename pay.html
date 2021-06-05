@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <link href="pay.css" rel="stylesheet" type="text/css" />
     
@@ -9,17 +11,17 @@
     <script src="https://kit.fontawesome.com/a5f3739fb3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
-    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
+
 <body>
     
     <header>
         <ul class="top">
             <li><a href="Log_in.html">로그인</a></li>
             <li><a href="sign_up.html">회원가입</a></li>
-            <li><a href="identification.html">마이페이지</a></li>
-            <li><a href="cart.html">장바구니</a></li>
+            <li><a href="log-in">마이페이지</a></li>
+            <li><a href="log-in">장바구니</a></li>
         </ul>
     
         <div class="logo_search">
@@ -50,45 +52,64 @@
         </div>
     </header>
     
-    
-    <div>
-        <div class="prod" align="center">
-            <form method="POST">
-            
-            
-            <table align="center" width="760">
-			<th>상품명</th>
-			<th>카드선택</th>
-			<th>금액</th>
-			
-			<tr align="center">
-			    <td>파크라이 4</td>
-			    <td><button type="button" onclick="window.open('coupon.html','czxcxz','width=700,height=500,location=no,status=no,scrollbars=yes');">
-			    쿠폰사용</button></td>
-		   	 	<td>12900</td>
-			</tr>
-			<tr align="right">
-				<td align="left">  배송비 : 3000 </td>
-				<td colspan="2" align="right">총 결제금액 : 파크라이 4 12900 + 배송비 3000 = 15900<button type="button">카카오페이 결제</button></td>
-			</tr>
-    		</table>
-   	        
-            
-            	
-                  
-                  
-                   
-               </form>
+    <body>
+        <form action="#" accept-charset="utf-8" method="POST" onkeydown="return captureReturnKey(event)">
+        <div class="prod">
+            <div id="product">
+                <!-- 장바구니 쪽 head -->
+                
+                <div id="head_name">
+                    상품명
+                </div>
+                <div id="head_delivery">
+                    배송비
+                </div>
+                <div id="head_price">
+                    개별가
+                </div>
+                <div id="head_amount">
+                    수량
+                </div>
+                <div id="head_price">
+                    상품금액
+                </div>
+                
+                <!-- 여기서부터 상품 추가 -->
+               
+                <div id="name">a</div>
+                <div class="delivery">3000</div>
+                <div class="price" id="price1">3000</div>
+                <div id="amount">
+                    1
+                </div>
+                <div id="price"><div id="price1">3000</div><nav>원</nav></div>
+             
+                
+                <div id="name">a</div>
+                <div class="delivery">5000</div>
+                <div class="price" id="price2">4000</div>
+                <div id="amount">
+                    1
+                </div>
+                <div id="price"><div id="price3">4000</div><nav>원</nav></div>
+                
+                <!-- 총 금액 -->
+                <div class="sum">
+                    총 금액
+                </div>
+                <div class="result"><div id="sum_price">7000</div><nav id="result">원</nav></div>
+
+                <!-- 결제 버튼 -->
+                <div class="buy">
+                    <button type="button" onclick="window.open('coupon.html','czxcxz','width=700,height=500,location=no,status=no,scrollbars=yes');">
+			    쿠폰사용</button>
+                    <button value="">결제하기</button>
+                </div>
             </div>
         </div>
-        <div class="info">
-            <div class="information">
-                <pre>
-                    
-                </pre>
-            </div>
-        </div>
-    </div>
+        </form>
+    </body>
+
     <footer class="others">
         <ul>
             <li>1111</li>
@@ -96,25 +117,29 @@
             <li>3333</li>
             <li>4444</li>
         </ul>
+    
         <ul>
             <li>111</li>
             <li>222</li>
             <li>333</li>
             <li>444</li>
         </ul>
+    
         <ul>
             <li>11</li>
             <li>22</li>
             <li>33</li>
             <li>44</li>
         </ul>
+    
         <ul>
             <li>1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
-        </ul>
-    </footer>
-</body>
-<script src="pay.js"></script>
+        </ul>   
+    
+        </footer>
+        <script async src="cart.js"></script>
+    </body>
 </html>
