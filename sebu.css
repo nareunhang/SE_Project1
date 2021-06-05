@@ -351,7 +351,7 @@ hmtl {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 100px;
   height: 60px;
 }
 
@@ -359,14 +359,23 @@ hmtl {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 100px;
+  height: 60px;
+}
+
+.review .reviewlist .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
   height: 60px;
 }
 
 .review .reviewlist .rev {
   display: flex;
   align-items: center;
-  width: 600px;
+  margin-left: 10px;
+  width: 590px;
   height: 60px;
 }
 
