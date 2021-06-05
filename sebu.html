@@ -121,8 +121,17 @@
                     name
                 </div>
                 
-                <div id="price">
-                    price
+                <div class="price">
+                    상품 가격
+                    <div id="price">
+                        price
+                    </div>
+                </div>
+                <div class="addprice">
+                    배송비
+                    <div id="addprice">
+                        addprice
+                    </div>
                 </div>
                 
                 <form method="POST">
@@ -189,7 +198,7 @@
                     <div id="keep">
                         <div class="sub">
                                 <div style="display: flex; margin-bottom: 10px;">
-                                    <input name="amount" id="num" type="text" value="1" readonly="readonly" style="text-align:center;"/>
+                                    <input name="amount" id="num" type="text" value="1" readonly="readonly" style="text-align:center;" min="1"/>
                                     <ul>
                                         <li>
                                             <button class="num_button" type="button" onclick="fnCalCount('p',this);">+</button>
@@ -220,6 +229,56 @@
             </div>
         </div>
     </div>
+
+    <!--여기서부터 상품평-->
+    <div class="r">
+        <div class="review">
+            <div class="averscore">
+                <h2>상품평</h2>
+                <div id="averscore">평균점수<nav> / 5.0</nav></div>
+            </div>
+
+            <div class="reviewlist">
+                <div class="recommend">
+                    추천
+                </div>
+                <div class="speed">
+                    배송 속도
+                </div>
+                <div class="rev">
+                    후기
+                </div>
+                <div class="person">
+                    <div id="name">
+                        이름
+                    </div>
+                    <div id="day">
+                        날짜
+                    </div>
+                </div>
+            </div>
+            <div class="reviewlist">
+                <div class="recommend">
+                    추천
+                </div>
+                <div class="speed">
+                    배송 속도
+                </div>
+                <div class="rev">
+                    후기
+                </div>
+                <div class="person">
+                    <div id="name">
+                        이름
+                    </div>
+                    <div id="day">
+                        날짜
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="others">
         <ul>
             <li>1111</li>
