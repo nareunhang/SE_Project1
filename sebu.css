@@ -509,6 +509,9 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1080px;
   background-color: blueviolet;
 }
+pre {
+  white-space: pre-wrap;
+}
 
 /*footer*/
 .others {
