@@ -55,9 +55,16 @@
     <form autocomplete="off" action="#" accept-charset="utf-8" class="question" name="question" method="POST">
         <div class="quest">
             <h2>문의하기</h2>
+            <div class="cate">
+                종류<br>
+                <input type="radio" name="cate" value="상품" checked> 상품
+                <input type="radio" name="cate" value="배송"> 배송
+                <input type="radio" name="cate" value="반품/취소"> 반품/취소
+                <input type="radio" name="cate" value="기타"> 기타
+            </div>
             <div class="title">
                 제목<br>
-                <input type="text">
+                <input type="text" class="text">
             </div>
             <div class="content">
                 내용<br>
