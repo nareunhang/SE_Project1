@@ -87,8 +87,6 @@ function showPopup() {
 
 
 
-
-
 //이벤트 배너 함수들.
 //current position
 let pos = 0;

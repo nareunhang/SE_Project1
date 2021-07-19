@@ -136,11 +136,13 @@
 }
 
 
-#list{
-    display: flex;
-    width: 1075px;
-    height: 400px;
-}
+    #list{
+        display: flex;
+        flex-direction: column;
+        width: 1075px;
+        height: 400px;
+        margin-top: 20px;
+    }
 #list ul{
     margin-top: 10px;
 }

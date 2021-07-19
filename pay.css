@@ -266,16 +266,13 @@ header {
 
 .prod .result {
   display: flex;
-  justify-content: right;
-  align-content: space-between;
-  width: 90px;
+  justify-content: space-between;
+  width: 1075px;
   margin-top: 5px;
   border-bottom: 1px solid black;
 }
 
-.prod .result #result {
-  margin-left: auto;
-}
+
 
 .prod .buy {
   margin-top: 5px;
